@@ -1,0 +1,6 @@
+# ide
+.idea/
+tmp/
+*.plist
+
+数据结构与算法.mindnode/

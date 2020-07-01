@@ -30,7 +30,46 @@
 参考:
 - [JDK11版HashMap源码全部解析(详细)](https://blog.csdn.net/qq_21845263/article/details/89604721)
 
+### 树(Tree), 环()
+
+![](树和图.png)
+
+![](树的定义.png)
+
+树的问题解决一般都是**递归**
+
+#### 二叉树(Binary Tree)
+
+只有左右两个节点的树
+
+二叉树的遍历, 看根节点的位置:
+- 前序, 根左右
+- 中序, 左根右
+- 后序, 左右根
+
+查找一个元素的时间复杂度: O(n)
+
+#### 二叉搜索树(Binary Search Tree)
+
+有序的二叉树
+
+![](二叉搜索树定义.png)
+
+**中序遍历**得到的列表中的元素是按**升序排列**
+
+二叉搜索树的查询/添加/删除的时间复杂度: O(log n)
+
+删除拥有左右节点的根节点时, 需要把左边最大(左子树的最右边)或者右边最小的节点(右字数的最左边)提升为根节点.
+
+## 解法
+
+递归可以通过**栈+循环**来模拟.
+
+![](栈循环后序遍历.jpg)
+
 ## 题目
 
 - [有效的字母异位词](https://leetcode-cn.com/problems/valid-anagram/description/)
 - [字母异位词分组](https://leetcode-cn.com/problems/group-anagrams/)
+- [二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/)
+- [N 叉树的后序遍历](https://leetcode-cn.com/problems/n-ary-tree-postorder-traversal/)

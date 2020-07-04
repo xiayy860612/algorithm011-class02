@@ -7,17 +7,7 @@ import java.util.Hashtable;
  */
 class ValidAnagram {
     /**
-     * 不推荐
-     * 对两个字符串进行排序后比较
-     *
-     * 时间复杂度: O(nlog n)
-     * 空间复杂度: O(1)
-     */
-
-    /**
-     * 推荐:
-     * 使用哈希表存储每个字母出现的次数, 最后用比较.
-     * 可适用于unicode
+     * 哈希计数
      *
      * 时间复杂度: O(n)
      * 空间复杂度: O(n)
